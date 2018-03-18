@@ -151,4 +151,7 @@
     <rule ref="PEAR.WhiteSpace.ScopeClosingBrace"/>
     <rule ref="Squiz.Functions.GlobalFunction"/>
 
+    <!-- Expect an empty line at the end of file -->
+    <rule ref="PSR2.Files.EndFileNewline"/>
+
 </ruleset>
