@@ -73,7 +73,6 @@
     </rule>
     <rule ref="Generic.WhiteSpace.DisallowTabIndent"/>
 
-
     <!-- Keywords and True/False/Null -->
 
     <!-- PHP keywords MUST be in lower case. eg foreach ( $x AS ...) errors -->
@@ -92,23 +91,33 @@
 
     <!-- Method names MUST NOT be declared with a space after the method name. The opening brace MUST go on its own line, and the closing brace MUST go on the next line following the body. There MUST NOT be a space after the opening parenthesis, and there MUST NOT be a space before the closing parenthesis. -->
     <!-- checked in Methods/FunctionClosingBraceSniff -->
-    <!--<rule ref="Squiz.Functions.FunctionDeclaration"/>-->
+<!--    <rule ref="Squiz.Functions.FunctionDeclaration"/>-->
     <!--<rule ref="Squiz.Functions.LowercaseFunctionKeywords"/>-->
 
     <!-- In the argument list, there MUST NOT be a space before each comma, and there MUST be one space after each comma. -->
     <!-- too strict for mumsys! -->
-    <!--
+
     <rule ref="Squiz.Functions.FunctionDeclarationArgumentSpacing">
         <properties>
-             e.g: value 1 for: x = y, value 0: x=y
+             <!--e.g: value 1 for: "x = y", value 0: "x=y"-->
             <property name="equalsSpacing" value="1"/>
+            <property name="requiredSpacesAfterOpen" value="1"/>
+            <property name="requiredSpacesBeforeClose" value="1"/>
         </properties>
     </rule>
-    <rule ref="Squiz.Functions.FunctionDeclarationArgumentSpacing.SpacingAfterHint">
-        <severity>0</severity>
-    </rule>
-    -->
 
+    <rule ref="Squiz.Strings.ConcatenationSpacing">
+        <properties>
+            <property name="spacing" value="1" />
+            <property name="ignoreNewlines" value="true" />
+        </properties>
+    </rule>
+
+    <rule ref="Generic.WhiteSpace.ArbitraryParenthesesSpacing">
+        <properties>
+            <property name="spacing" value="1" />
+        </properties>
+    </rule>
 
     <rule ref="PEAR.Classes.ClassDeclaration"/>
     <rule ref="PEAR.ControlStructures.ControlSignature"/>
@@ -179,4 +188,3 @@
     <rule ref="PSR2.Files.EndFileNewline"/>
 
 </ruleset>
-
