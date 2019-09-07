@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# adds Change-Id to commits which are not pushed yet
+# adds Change-Id to commits which are not pushed yet (Fixes the commit bithday problem)
 #
 tmp=$(mktemp)
 hook=$(readlink -f $(git rev-parse --git-dir))/hooks/commit-msg
