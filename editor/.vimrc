@@ -12,7 +12,7 @@ syntax enable
 set tags=./.php.ctags
 
 " {{{ ## syntastic 4 mumsys project
-let g:syntastic_php_phpcs_args = "--standard=misc/coding/Mla"
+let g:syntastic_php_phpcs_args = "--standard=misc/coding/Mumsys"
 " }}}
 
 " {{{ ## NERDTree 4 mumsys project
