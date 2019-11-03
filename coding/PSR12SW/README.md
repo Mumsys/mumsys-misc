@@ -2,5 +2,5 @@
 
 Coding standard PSR12 extended: PSR12SW
 
-Additions/ changes for glasses wearer
+Additions/ changes for spectacle/glasses wearer
 
