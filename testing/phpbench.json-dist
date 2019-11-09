@@ -1,0 +1,30 @@
+{
+    "path": "benchmarks/src",
+    "progress": "dots",
+    "xml_storage_path": "logs/phpbench_history",
+    "archiver": "logs/phpbench_archive",
+    "time_unit": "milliseconds",
+
+    "reports": {
+        "default": {
+            "extends": "aggregate"
+        },
+        "unittests": {
+            "extends": "aggregate"
+        }
+    },
+
+    "outputs": {
+         "default": {
+             "extends": "html",
+             "file": "../docs/Benchmarks/current.html",
+             "title": "Mumsys - benchmarks"
+         },
+         "unittests": {
+             "extends": "html",
+             "file": "../docs/Benchmarks/unittests.html",
+             "title": "Mumsys - unittests benchmarks"
+         }
+    }
+
+}

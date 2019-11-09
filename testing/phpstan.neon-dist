@@ -1,0 +1,12 @@
+# first setup, to be updated
+parameters:
+    bootstrap: bootstrap.php
+    level: 1
+    autoload_directories:
+        - %rootDir%/../../../tests/src
+        - %rootDir%/../../../tests/testfiles
+        - %rootDir%/../../../src
+#    autoload_files:
+#        - %rootDir%/../../src/config/default.php
+#    excludes_analyse:
+#        - %rootDir%/../../../src/www
