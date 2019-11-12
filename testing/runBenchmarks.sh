@@ -30,6 +30,10 @@ fi
 # make sure phpbench.json* file will be executed based on this path
 cd "${SCRIPT_DIR}/../../tests";
 
+echo '---';
+echo "Cool down! This may take some time/hours when testing all.";
+echo '---'
+
 ${PHP_BIN} ${SCRIPT_DIR}/../../vendor/bin/${PROGRAM} run \
     --report=aggregate \
     --bootstrap=${SCRIPT_DIR}/../../tests/bootstrap.php \
