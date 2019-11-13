@@ -2,11 +2,21 @@
 parameters:
     bootstrap: bootstrap.php
     level: 1
+
+    # Hints:
+    # Make sure not using a global /tmp dir by default.
+    # [project root]/tests/tmp/cache is a good place.
+    # Dont forget to update composer dependencies and autoload cache to be
+    # renewed when switching branches
+    tmpDir: %rootDir%/../../../tests/tmp/cache
+
     autoload_directories:
+        - %rootDir%/../../../src
         - %rootDir%/../../../tests/src
         - %rootDir%/../../../tests/testfiles
-        - %rootDir%/../../../src
+        - %rootDir%/../../../tests/benchmarks
+
 #    autoload_files:
-#        - %rootDir%/../../src/config/default.php
+#        - %rootDir%/../../../vendor/autoload.php
 #    excludes_analyse:
 #        - %rootDir%/../../../src/www
