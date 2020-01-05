@@ -18,6 +18,7 @@ SCRIPT_DIR="$(dirname $(readlink -f "$0"))";
 . ${SCRIPT_DIR}/source-check-vendor-available.sh
 
 . "${SCRIPT_DIR}/phpcs-base.sh";
+
 CS_BIN="${SCRIPT_DIR}/../../vendor/bin/phpcs";
 
 ${PHP_BIN} ${CS_BIN} ${PHPCS_STANDARD} ${PHPCS_IGNORELINE} $*
