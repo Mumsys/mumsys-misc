@@ -17,7 +17,7 @@ SCRIPT_DIR="$(dirname $(readlink -f "$0"))";
 # check vendor program
 . ${SCRIPT_DIR}/source-check-vendor-available.sh
 
-${PHP_BIN} ${SCRIPT_DIR}/../../vendor/bin/${PROGRAM} --colors \
+${PHP_BIN} ${SCRIPT_DIR}/../../vendor/bin/${PROGRAM} --colors --no-coverage \
     --configuration ${SCRIPT_DIR}/../../tests/phpunit.xml \
     --bootstrap ${SCRIPT_DIR}/../../tests/bootstrap.php \
     --no-coverage $*
