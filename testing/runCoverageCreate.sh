@@ -25,6 +25,6 @@ if [ -f "${SCRIPT_DIR}/xdebug-filter.php" ]; then
 fi
 
 ${PHP_BIN} ${SCRIPT_DIR}/../../vendor/bin/${PROGRAM} --colors \
-    --configuration ${SCRIPT_DIR}/../../tests/phpunit-coverage.xml \
+    --configuration ${SCRIPT_DIR}/../../tests/phpunit.xml \
     --bootstrap ${SCRIPT_DIR}/../../tests/bootstrap.php \
     ${COVERAGE_SPEEDUP} $*
