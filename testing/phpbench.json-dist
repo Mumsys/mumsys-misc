@@ -2,7 +2,6 @@
     "path": "benchmarks/src",
     "progress": "dots",
     "xml_storage_path": "logs/phpbench_history",
-    "archiver": "logs/phpbench_archive",
     "time_unit": "milliseconds",
 
     "reports": {
