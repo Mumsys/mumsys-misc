@@ -1,6 +1,7 @@
 # first setup, to be updated
 parameters:
-    bootstrap: bootstrap.php
+    bootstrapFiles:
+        - bootstrap.php
     level: 1
 
     # Hints:
@@ -10,7 +11,7 @@ parameters:
     # renewed when switching branches
     tmpDir: %rootDir%/../../../tests/tmp/cache
 
-    autoload_directories:
+    scanDirectories:
         - %rootDir%/../../../src
         - %rootDir%/../../../tests/src
         - %rootDir%/../../../tests/testfiles
