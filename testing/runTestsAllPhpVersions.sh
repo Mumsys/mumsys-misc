@@ -6,7 +6,7 @@ cd ${SCRIPT_DIR}/../../;
 
 allversions='';
 
-for PHPBIN in php5.6 php7.0 php7.1 php7.2 php7.3 php7.4 php8.0;
+for PHPBIN in php5.6 php7.0 php7.1 php7.2 php7.3 php7.4 php8.0 php8.1;
 do
     if [ -f "`which ${PHPBIN}`" ]; then
         allversions="${allversions} ${PHPBIN}"
